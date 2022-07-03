@@ -1,0 +1,50 @@
+.catalog__pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.pagination {
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 12px;
+		margin-right: 12px;
+	}
+	&__item {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 2px solid transparent;
+		border-radius: 2px;
+		width: 36px;
+		height: 36px;
+		&--active {
+			border: 2px solid $color-main;
+		}
+	}
+	&__arrow {
+		width: 18px;
+		height: 18px;
+		color: $color-primary;
+		&-start {
+			transform: rotate(180deg);
+		}
+		&--disabled {
+			color: $color-grey-light;
+			pointer-events: none;
+		}
+	}
+}
+.arrow {
+	width: 18px;
+	height: 18px;
+}

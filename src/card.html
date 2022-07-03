@@ -12,8 +12,8 @@
 	</head>
 	<body>
 		<header class="header">
-			<h2 class="visually__hidden">Techno Shop - онлайн магазин гаджетов</h2>
-			<div class="container">
+			<h2 class="visually-hidden">Techno Shop - онлайн магазин гаджетов</h2>
+			<div class="container header__container">
 				<a href="/" aria-label="Логотип">
 					<img class="header__logo" src="img/logo.svg" alt="Логотип Techno Shop" />
 				</a>
@@ -65,7 +65,7 @@
 			</div>
 		</header>
 
-		<main>
+		<main class="main">
 			<section class="card">
 				<div class="container">
 					<div class="card__details">
@@ -216,7 +216,7 @@
 			<div class="recommended">
 				<div class="container">
 					<h2 class="recommended__title">Возможно вам также понравится</h2>
-					<div class="recommended__carousel">
+					<div class="swiper recommended__carousel">
 						<ul class="swiper-wrapper">
 							<li class="swiper-slide">
 								<article class="goods-item">
@@ -226,7 +226,23 @@
 									</a>
 									<div class="goods-item__buy">
 										<p class="goods-item__price">38049 ₽</p>
-										<button class="goods-item__to-cart" aria-label="добавить товар в корзину">
+										<button class="goods-item_to-cart" aria-label="добавить товар в корзину">
+											В корзину
+										</button>
+									</div>
+								</article>
+							</li>
+							<li class="swiper-slide">
+								<article class="goods-item">
+									<a href="card.html">
+										<img src="img/apple.jpg" alt="" class="goods-item__image" />
+										<h3 class="goods-item__title">
+											Смартфон APPLE iPhone 12 64GB Purple Смартфон APPLE iPhone 12 64GB Purple
+										</h3>
+									</a>
+									<div class="goods-item__buy">
+										<p class="goods-item__price">120 999 ₽</p>
+										<button class="goods-item_to-cart" aria-label="добавить в корзину">
 											В корзину
 										</button>
 									</div>
@@ -240,7 +256,23 @@
 									</a>
 									<div class="goods-item__buy">
 										<p class="goods-item__price">38049 ₽</p>
-										<button class="goods-item__to-cart" aria-label="добавить товар в корзину">
+										<button class="goods-item_to-cart" aria-label="добавить товар в корзину">
+											В корзину
+										</button>
+									</div>
+								</article>
+							</li>
+							<li class="swiper-slide">
+								<article class="goods-item">
+									<a href="card.html">
+										<img src="img/apple.jpg" alt="" class="goods-item__image" />
+										<h3 class="goods-item__title">
+											Смартфон APPLE iPhone 12 64GB Purple Смартфон APPLE iPhone 12 64GB Purple
+										</h3>
+									</a>
+									<div class="goods-item__buy">
+										<p class="goods-item__price">120 999 ₽</p>
+										<button class="goods-item_to-cart" aria-label="добавить в корзину">
 											В корзину
 										</button>
 									</div>
@@ -254,7 +286,7 @@
 									</a>
 									<div class="goods-item__buy">
 										<p class="goods-item__price">38049 ₽</p>
-										<button class="goods-item__to-cart" aria-label="добавить товар в корзину">
+										<button class="goods-item_to-cart" aria-label="добавить товар в корзину">
 											В корзину
 										</button>
 									</div>
@@ -268,7 +300,7 @@
 									</a>
 									<div class="goods-item__buy">
 										<p class="goods-item__price">38049 ₽</p>
-										<button class="goods-item__to-cart" aria-label="добавить товар в корзину">
+										<button class="goods-item_to-cart" aria-label="добавить товар в корзину">
 											В корзину
 										</button>
 									</div>
@@ -282,13 +314,14 @@
 									</a>
 									<div class="goods-item__buy">
 										<p class="goods-item__price">38049 ₽</p>
-										<button class="goods-item__to-cart" aria-label="добавить товар в корзину">
+										<button class="goods-item_to-cart" aria-label="добавить товар в корзину">
 											В корзину
 										</button>
 									</div>
 								</article>
 							</li>
 						</ul>
+						<div class="swiper-pagination"></div>
 					</div>
 				</div>
 			</div>
@@ -296,43 +329,43 @@
 
 		<footer class="footer">
 			<h2 class="visually-hidden">Подвал сайта</h2>
-			<div class="container">
-				<a href="/" aria-label="Логотип">
+			<div class="container footer__container">
+				<a href="/" class="footer__logo-link" aria-label="Логотип">
 					<img class="footer__logo" src="img/logo.svg" alt="Логотип Techno Shop" />
 				</a>
 				<div class="footer__column">
 					<h3 class="footer__column-title">Каталог</h3>
 					<ul class="footer__list footer__list_double">
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог смартфонов">Смартфоны</a>
+							<a href="#" class="footer__link" aria-label="Каталог смартфонов">Смартфоны</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог электронных книг"
+							<a href="#" class="footer__link" aria-label="Каталог электронных книг"
 								>Электронные книги</a
 							>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог планшетов">Планшеты</a>
+							<a href="#" class="footer__link" aria-label="Каталог планшетов">Планшеты</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог мониторов">Мониторы</a>
+							<a href="#" class="footer__link" aria-label="Каталог мониторов">Мониторы</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог умных часов">Умные часы</a>
+							<a href="#" class="footer__link" aria-label="Каталог умных часов">Умные часы</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог смарт приставок"
+							<a href="#" class="footer__link" aria-label="Каталог смарт приставок"
 								>Смарт-приставка</a
 							>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог моноблоков">Моноблоки</a>
+							<a href="#" class="footer__link" aria-label="Каталог моноблоков">Моноблоки</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог процессоров">Процессоры</a>
+							<a href="#" class="footer__link" aria-label="Каталог процессоров">Процессоры</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог ноутбуков">Ноутбуки</a>
+							<a href="#" class="footer__link" aria-label="Каталог ноутбуков">Ноутбуки</a>
 						</li>
 					</ul>
 				</div>
@@ -340,35 +373,35 @@
 					<h3 class="footer__column-title">Покупателям</h3>
 					<ul class="footer__list">
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="оплата заказа">Оплата заказа</a>
+							<a href="#" class="footer__link" aria-label="оплата заказа">Оплата заказа</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="условия доставки">Условия доставки</a>
+							<a href="#" class="footer__link" aria-label="условия доставки">Условия доставки</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="условия возврата заказа"
+							<a href="#" class="footer__link" aria-label="условия возврата заказа"
 								>Условия возврата заказа</a
 							>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="ссылка на блог компании">Блог</a>
+							<a href="#" class="footer__link" aria-label="ссылка на блог компании">Блог</a>
 						</li>
 					</ul>
 				</div>
 				<div class="footer__column">
 					<h3 class="footer__column-title">Контакты</h3>
 					<ul class="footer__list footer__list_contacts">
-						<li class="footer__item">
+						<li class="footer__item footer__item_contact">
 							Тел:
-							<a href="tel:89149239223" class="footer-link" aria-label="телефон для связи"
+							<a href="tel:89149239223" class="footer__link" aria-label="телефон для связи"
 								>8 914 923 92-23</a
 							>
 						</li>
-						<li class="footer__item">
+						<li class="footer__item footer__item_contact">
 							Email:
 							<a
 								href="mailto=TechnoSHOP@gmail.co"
-								class="footer-link"
+								class="footer__link"
 								aria-label="электронная почта"
 								>TechnoSHOP@gmail.com</a
 							>
@@ -376,7 +409,7 @@
 					</ul>
 					<ul class="footer__social social">
 						<li class="social__item">
-							<a href="#" class="sociai__link" aria-label="отправить сообщение в whatsap">
+							<a href="#" class="social__link" aria-label="отправить сообщение в whatsap">
 								<svg
 									width="26"
 									height="26"
@@ -394,7 +427,7 @@
 							</a>
 						</li>
 						<li class="social__item">
-							<a href="#" class="sociai__link" aria-label="перейти в youtube">
+							<a href="#" class="social__link" aria-label="перейти в youtube">
 								<svg
 									width="24"
 									height="18"
@@ -409,7 +442,7 @@
 							</a>
 						</li>
 						<li class="social__item">
-							<a href="#" class="sociai__link" aria-label="перейти в группу в telegram">
+							<a href="#" class="social__link" aria-label="перейти в группу в telegram">
 								<svg
 									width="22"
 									height="20"
@@ -424,6 +457,18 @@
 							</a>
 						</li>
 					</ul>
+				</div>
+				<div class="footer__column footer__column_copyright">
+					<p class="footer__info-copyright">&copy; TechnoSHOP, 2022</p>
+				</div>
+				<div class="footer__column footer__column_author">
+					<div class="footer__info_author">
+						<p>Design by Anastasia Ilina</p>
+						<p>
+							Tg:
+							<a class="footer__info-link" href="https://t.me/@Mrshmallowww">@Mrshmallowww</a>
+						</p>
+					</div>
 				</div>
 			</div>
 		</footer>

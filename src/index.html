@@ -12,8 +12,8 @@
 	</head>
 	<body>
 		<header class="header">
-			<h2 class="visually__hidden">Techno Shop - онлайн магазин гаджетов</h2>
-			<div class="container">
+			<h2 class="visually-hidden">Techno Shop - онлайн магазин гаджетов</h2>
+			<div class="container header__container">
 				<a href="/" aria-label="Логотип">
 					<img class="header__logo" src="img/logo.svg" alt="Логотип Techno Shop" />
 				</a>
@@ -65,7 +65,7 @@
 			</div>
 		</header>
 
-		<main>
+		<main class="main">
 			<section class="catalog">
 				<div class="container">
 					<h2 class="catalog__title">Каталог</h2>
@@ -80,7 +80,93 @@
 										</a>
 										<div class="goods-item__buy">
 											<p class="goods-item__price">38049 ₽</p>
-											<button class="goods-item__to-cart" aria-label="добавить в корзину">
+											<button class="goods-item_to-cart" aria-label="добавить в корзину">
+												В корзину
+											</button>
+										</div>
+									</article>
+								</li>
+								<li class="goods__item">
+									<article class="goods-item">
+										<a href="card.html">
+											<img src="img/apple.jpg" alt="" class="goods-item__image" />
+											<h3 class="goods-item__title">
+												Смартфон APPLE iPhone 12 64GB Purple Смартфон APPLE iPhone 12 64GB Purple
+											</h3>
+										</a>
+										<div class="goods-item__buy">
+											<p class="goods-item__price">120 999 ₽</p>
+											<button class="goods-item_to-cart" aria-label="добавить в корзину">
+												В корзину
+											</button>
+										</div>
+									</article>
+								</li>
+								<li class="goods__item">
+									<article class="goods-item">
+										<a href="card.html">
+											<img src="img/monoblock.jpg" alt="" class="goods-item__image" />
+											<h3 class="goods-item__title">Моноблок HP ProOne</h3>
+										</a>
+										<div class="goods-item__buy">
+											<p class="goods-item__price">38049 ₽</p>
+											<button class="goods-item_to-cart" aria-label="добавить в корзину">
+												В корзину
+											</button>
+										</div>
+									</article>
+								</li>
+								<li class="goods__item">
+									<article class="goods-item">
+										<a href="card.html">
+											<img src="img/monoblock.jpg" alt="" class="goods-item__image" />
+											<h3 class="goods-item__title">Моноблок HP ProOne</h3>
+										</a>
+										<div class="goods-item__buy">
+											<p class="goods-item__price">38049 ₽</p>
+											<button class="goods-item_to-cart" aria-label="добавить в корзину">
+												В корзину
+											</button>
+										</div>
+									</article>
+								</li>
+								<li class="goods__item">
+									<article class="goods-item">
+										<a href="card.html">
+											<img src="img/monoblock.jpg" alt="" class="goods-item__image" />
+											<h3 class="goods-item__title">Моноблок HP ProOne</h3>
+										</a>
+										<div class="goods-item__buy">
+											<p class="goods-item__price">38049 ₽</p>
+											<button class="goods-item_to-cart" aria-label="добавить в корзину">
+												В корзину
+											</button>
+										</div>
+									</article>
+								</li>
+								<li class="goods__item">
+									<article class="goods-item">
+										<a href="card.html">
+											<img src="img/monoblock.jpg" alt="" class="goods-item__image" />
+											<h3 class="goods-item__title">Моноблок HP ProOne</h3>
+										</a>
+										<div class="goods-item__buy">
+											<p class="goods-item__price">38049 ₽</p>
+											<button class="goods-item_to-cart" aria-label="добавить в корзину">
+												В корзину
+											</button>
+										</div>
+									</article>
+								</li>
+								<li class="goods__item">
+									<article class="goods-item">
+										<a href="card.html">
+											<img src="img/monoblock.jpg" alt="" class="goods-item__image" />
+											<h3 class="goods-item__title">Моноблок HP ProOne</h3>
+										</a>
+										<div class="goods-item__buy">
+											<p class="goods-item__price">38049 ₽</p>
+											<button class="goods-item_to-cart" aria-label="добавить в корзину">
 												В корзину
 											</button>
 										</div>
@@ -91,82 +177,107 @@
 						<aside class="catalog__filter filter">
 							<form class="filter__form">
 								<h3 class="filter__title">Фильтры</h3>
-								<fieldset class="filter__field">
-									<legend class="filter__field-title">Цена</legend>
-									<div class="filter__flex">
-										<label
-											><input
-												type="number"
-												name="price-start"
-												placeholder="от"
-												class="filter__input"
-										/></label>
-										<label
-											><input type="number" name="price-end" placeholder="до" class="filter__input"
-										/></label>
-									</div>
-								</fieldset>
-								<fieldset class="filter__field">
-									<legend class="filter__field-title">Категория</legend>
-									<label>
-										<select name="category" class="filter__select">
-											<option value="phone">Смартфоны</option>
-											<option value="tab">Планшеты</option>
-											<option value="watces">Умные часы</option>
-											<option value="monoblock">Моноблоки</option>
-											<option value="notebook">Ноутбуки</option>
-										</select>
-									</label>
-								</fieldset>
-								<fieldset class="filter__field">
-									<legend class="filter__field-title">Диагональ</legend>
-									<div class="filter__flex">
-										<label
-											><input
-												type="number"
-												name="diagonal-start"
-												placeholder="от"
-												class="filter__input"
-										/></label>
-										<label
-											><input
-												type="number"
-												name="diagonal-end"
-												placeholder="до"
-												class="filter__input"
-										/></label>
-									</div>
-								</fieldset>
-								<fieldset class="filter__field">
-									<legend class="filter__field-title">Цвет</legend>
-									<div class="filter__flex">
+								<div class="filter__fields-list">
+									<fieldset class="filter__field">
+										<legend class="filter__field-title">Цена</legend>
+										<div class="filter__flex">
+											<label
+												><input
+													type="number"
+													name="price-start"
+													placeholder="от"
+													class="filter__input"
+											/></label>
+											<label
+												><input
+													type="number"
+													name="price-end"
+													placeholder="до"
+													class="filter__input"
+											/></label>
+										</div>
+									</fieldset>
+									<fieldset class="filter__field">
+										<legend class="filter__field-title">Категория</legend>
 										<label>
-											<input class="filter__checkbox" name="color" value="white" type="checkbox" />
-											Белый
+											<select name="category" class="filter__select filter__input_select">
+												<option value="phone">Смартфоны</option>
+												<option value="tab">Планшеты</option>
+												<option value="watces">Умные часы</option>
+												<option value="monoblock">Моноблоки</option>
+												<option value="notebook">Ноутбуки</option>
+											</select>
 										</label>
-										<label>
-											<input class="filter__checkbox" name="color" value="black" type="checkbox" />
-											Черный
-										</label>
-										<label>
-											<input class="filter__checkbox" name="color" value="silver" type="checkbox" />
-											Серебристый
-										</label>
-										Серебристый
-										<label>
-											<input class="filter__checkbox" name="color" value="green" type="checkbox" />
-											Зеленый
-										</label>
-										<label>
-											<input class="filter__checkbox" name="color" value="gold" type="checkbox" />
-											Золотой
-										</label>
-										<label>
-											<input class="filter__checkbox" name="color" value="red" type="checkbox" />
-											Красный
-										</label>
-									</div>
-								</fieldset>
+									</fieldset>
+									<fieldset class="filter__field">
+										<legend class="filter__field-title">Диагональ</legend>
+										<div class="filter__flex">
+											<label
+												><input
+													type="number"
+													name="diagonal-start"
+													placeholder="от"
+													class="filter__input"
+											/></label>
+											<label
+												><input
+													type="number"
+													name="diagonal-end"
+													placeholder="до"
+													class="filter__input"
+											/></label>
+										</div>
+									</fieldset>
+									<fieldset class="filter__field">
+										<legend class="filter__field-title">Цвет</legend>
+										<div class="filter__flex filter__flex_column">
+											<label>
+												<input
+													class="filter__checkbox"
+													name="color"
+													value="white"
+													type="checkbox"
+												/>
+												Белый
+											</label>
+											<label>
+												<input
+													class="filter__checkbox"
+													name="color"
+													value="black"
+													type="checkbox"
+												/>
+												Черный
+											</label>
+											<label>
+												<input
+													class="filter__checkbox"
+													name="color"
+													value="silver"
+													type="checkbox"
+												/>
+												Серебристый color: $color-grey;
+											</label>
+											<label>
+												<input
+													class="filter__checkbox"
+													name="color"
+													value="green"
+													type="checkbox"
+												/>
+												Зеленый
+											</label>
+											<label>
+												<input class="filter__checkbox" name="color" value="gold" type="checkbox" />
+												Золотой
+											</label>
+											<label>
+												<input class="filter__checkbox" name="color" value="red" type="checkbox" />
+												Красный
+											</label>
+										</div>
+									</fieldset>
+								</div>
 								<button class="filter__apply" type="submit" aria-label="применить фильтр">
 									Применить фильтр
 								</button>
@@ -178,8 +289,9 @@
 						<div class="catalog__pagination pagination">
 							<a
 								href="#"
-								class="pagination__arrow pagination__arrow-start"
+								class="pagination__arrow pagination__arrow-start pagination__arrow--disabled"
 								aria-label="перейти на первую страницу"
+								><svg><use href="#arrow" /></svg
 							></a>
 							<ul class="pagination__list">
 								<li class="pagination__item">
@@ -210,6 +322,7 @@
 								href="#"
 								class="pagination__arrow pagination__arrow-end"
 								aria-label="перейти на последнюю страницу"
+								><svg><use href="#arrow" /></svg
 							></a>
 						</div>
 					</div>
@@ -219,43 +332,43 @@
 
 		<footer class="footer">
 			<h2 class="visually-hidden">Подвал сайта</h2>
-			<div class="container">
-				<a href="/" aria-label="Логотип">
+			<div class="container footer__container">
+				<a href="/" class="footer__logo-link" aria-label="Логотип">
 					<img class="footer__logo" src="img/logo.svg" alt="Логотип Techno Shop" />
 				</a>
 				<div class="footer__column">
 					<h3 class="footer__column-title">Каталог</h3>
 					<ul class="footer__list footer__list_double">
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог смартфонов">Смартфоны</a>
+							<a href="#" class="footer__link" aria-label="Каталог смартфонов">Смартфоны</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог электронных книг"
+							<a href="#" class="footer__link" aria-label="Каталог электронных книг"
 								>Электронные книги</a
 							>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог планшетов">Планшеты</a>
+							<a href="#" class="footer__link" aria-label="Каталог планшетов">Планшеты</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог мониторов">Мониторы</a>
+							<a href="#" class="footer__link" aria-label="Каталог мониторов">Мониторы</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог умных часов">Умные часы</a>
+							<a href="#" class="footer__link" aria-label="Каталог умных часов">Умные часы</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог смарт приставок"
+							<a href="#" class="footer__link" aria-label="Каталог смарт приставок"
 								>Смарт-приставка</a
 							>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог моноблоков">Моноблоки</a>
+							<a href="#" class="footer__link" aria-label="Каталог моноблоков">Моноблоки</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог процессоров">Процессоры</a>
+							<a href="#" class="footer__link" aria-label="Каталог процессоров">Процессоры</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="Каталог ноутбуков">Ноутбуки</a>
+							<a href="#" class="footer__link" aria-label="Каталог ноутбуков">Ноутбуки</a>
 						</li>
 					</ul>
 				</div>
@@ -263,35 +376,35 @@
 					<h3 class="footer__column-title">Покупателям</h3>
 					<ul class="footer__list">
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="оплата заказа">Оплата заказа</a>
+							<a href="#" class="footer__link" aria-label="оплата заказа">Оплата заказа</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="условия доставки">Условия доставки</a>
+							<a href="#" class="footer__link" aria-label="условия доставки">Условия доставки</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="условия возврата заказа"
+							<a href="#" class="footer__link" aria-label="условия возврата заказа"
 								>Условия возврата заказа</a
 							>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer-link" aria-label="ссылка на блог компании">Блог</a>
+							<a href="#" class="footer__link" aria-label="ссылка на блог компании">Блог</a>
 						</li>
 					</ul>
 				</div>
 				<div class="footer__column">
 					<h3 class="footer__column-title">Контакты</h3>
 					<ul class="footer__list footer__list_contacts">
-						<li class="footer__item">
+						<li class="footer__item footer__item_contact">
 							Тел:
-							<a href="tel:89149239223" class="footer-link" aria-label="телефон для связи"
+							<a href="tel:89149239223" class="footer__link" aria-label="телефон для связи"
 								>8 914 923 92-23</a
 							>
 						</li>
-						<li class="footer__item">
+						<li class="footer__item footer__item_contact">
 							Email:
 							<a
 								href="mailto=TechnoSHOP@gmail.co"
-								class="footer-link"
+								class="footer__link"
 								aria-label="электронная почта"
 								>TechnoSHOP@gmail.com</a
 							>
@@ -299,7 +412,7 @@
 					</ul>
 					<ul class="footer__social social">
 						<li class="social__item">
-							<a href="#" class="sociai__link" aria-label="отправить сообщение в whatsap">
+							<a href="#" class="social__link" aria-label="отправить сообщение в whatsap">
 								<svg
 									width="26"
 									height="26"
@@ -317,7 +430,7 @@
 							</a>
 						</li>
 						<li class="social__item">
-							<a href="#" class="sociai__link" aria-label="перейти в youtube">
+							<a href="#" class="social__link" aria-label="перейти в youtube">
 								<svg
 									width="24"
 									height="18"
@@ -332,7 +445,7 @@
 							</a>
 						</li>
 						<li class="social__item">
-							<a href="#" class="sociai__link" aria-label="перейти в группу в telegram">
+							<a href="#" class="social__link" aria-label="перейти в группу в telegram">
 								<svg
 									width="22"
 									height="20"
@@ -348,6 +461,15 @@
 						</li>
 					</ul>
 				</div>
+				<div class="footer__column footer__column_copyright">
+					<p class="footer__info-copyright">&copy; TechnoSHOP, 2022</p>
+				</div>
+				<div class="footer__column footer__column_author">
+					<div class="footer__info-author">
+						<p>Design by Anastasia Ilina</p>
+						<p>Tg: <a href="https://t.me/@Mrshmallowww">@Mrshmallowww</a></p>
+					</div>
+				</div>
 			</div>
 		</footer>
 		<div class="modal modal__success">
@@ -362,5 +484,13 @@
 			</p>
 			<img class="modal__success-img" src="img/reject.svg" alt="" />
 		</div>
+
+		<svg style="display: none" width="18" height="18">
+			<symbol id="arrow" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M4.90802 3.49205L10.404 9.00005L4.90802 14.508L6.60002 16.2L13.8 9.00005L6.60002 1.80005L4.90802 3.49205Z"
+				/>
+			</symbol>
+		</svg>
 	</body>
 </html>

@@ -1,0 +1,5 @@
+1. про css
+2. про &__ {
+		min-width: 310px;
+		max-width: 340px;
+	}

@@ -1,0 +1,14 @@
+.recommended__carousel {
+	padding-bottom: 50px !important;
+	s.wiper-horizontal > .swiper-pagination-bullets,
+	.swiper-pagination-bullets.swiper-pagination-horizontal {
+		bottom: 0 !important;
+	}
+	.swiper-pagination-bullet {
+		width: 10px;
+		height: 10px;
+		&-active {
+			background-color: $color-main;
+		}
+	}
+}

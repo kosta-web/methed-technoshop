@@ -13,6 +13,8 @@ body {
 	min-width: 320px;
 	min-height: 100vh;
 	font-family: Montserrat, sans-serif;
+	color: $color-primary;
+	background-color: $color-secondary;
 }
 
 img,
@@ -30,6 +32,7 @@ button {
 a {
 	text-decoration: none;
 	color: inherit;
+	transition: color 0.3s ease-in-out;
 }
 
 ul {
@@ -41,10 +44,15 @@ ul {
 h1,
 h2,
 h3,
+h4,
 p,
-figure,
+figure {
+	margin: 0;
+}
 fieldset {
 	margin: 0;
+	padding: 0;
+	border: none;
 }
 
 .visually-hidden {
@@ -53,7 +61,18 @@ fieldset {
 }
 
 .container {
-	max-width: 1920px;
-	padding: 0 50px;
+	max-width: 1880px;
+	padding: 0 30px;
 	margin: 0 auto;
 }
+.main {
+	padding-top: 44px;
+	padding-bottom: 120px;
+}
+
+input[type='search']::-webkit-search-cansel-button {
+	display: none;
+}
+// .swiper-wrapper {
+// 	overflow-x: hidden;
+// }
