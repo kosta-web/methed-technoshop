@@ -48,7 +48,7 @@
 						</svg>
 						<span>8 914 923 92 - 23</span>
 					</a>
-					<a href="./cart.html" aria-label="перейти в корзину">
+					<a class="header__cart" href="./cart.html" aria-label="перейти в корзину">
 						<svg
 							width="36"
 							height="36"
@@ -201,6 +201,7 @@
 										<legend class="filter__field-title">Категория</legend>
 										<label>
 											<select name="category" class="filter__select filter__input_select">
+												<option value="all" selected>Все категории</option>
 												<option value="phone">Смартфоны</option>
 												<option value="tab">Планшеты</option>
 												<option value="watces">Умные часы</option>
@@ -256,7 +257,7 @@
 													value="silver"
 													type="checkbox"
 												/>
-												Серебристый color: $color-grey;
+												Серебристый
 											</label>
 											<label>
 												<input
@@ -286,45 +287,7 @@
 								</button>
 							</form>
 						</aside>
-						<div class="catalog__pagination pagination">
-							<a
-								href="#"
-								class="pagination__arrow pagination__arrow-start pagination__arrow--disabled"
-								aria-label="перейти на первую страницу"
-								><svg><use href="#arrow" /></svg
-							></a>
-							<ul class="pagination__list">
-								<li class="pagination__item">
-									<a
-										href="#"
-										class="pagination__link pagination__link--active"
-										aria-label="перейти на страницу 1"
-										>1</a
-									>
-								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__link" aria-label="перейти на страницу 2">2</a>
-								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__link" aria-label="перейти на страницу 3">3</a>
-								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__link" aria-label="перейти на страницу 4">4</a>
-								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__link" aria-label="перейти на страницу 5">5</a>
-								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__link" aria-label="перейти на страницу 6">6</a>
-								</li>
-							</ul>
-							<a
-								href="#"
-								class="pagination__arrow pagination__arrow-end"
-								aria-label="перейти на последнюю страницу"
-								><svg><use href="#arrow" /></svg
-							></a>
-						</div>
+						<div class="catalog__pagination pagination"></div>
 					</div>
 				</div>
 			</section>

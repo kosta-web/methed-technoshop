@@ -1,3 +1,11 @@
+.recommended {
+	&__title {
+		font-weight: 700;
+		font-size: 44px;
+		line-height: 54px;
+		margin-bottom: 10px;
+	}
+}
 .recommended__carousel {
 	padding-bottom: 50px !important;
 	s.wiper-horizontal > .swiper-pagination-bullets,

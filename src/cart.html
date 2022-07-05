@@ -48,7 +48,7 @@
 						</svg>
 						<span>8 914 923 92 - 23</span>
 					</a>
-					<a href="./cart.html" aria-label="перейти в корзину">
+					<a class="header__cart" href="./cart.html" aria-label="перейти в корзину">
 						<svg
 							width="36"
 							height="36"
@@ -67,10 +67,10 @@
 
 		<main class="main">
 			<section class="cart">
-				<h2 class="visually-hidden">Корзина</h2>
+				<h2 class="visually-hidden">Оформление заказа</h2>
 				<div class="container cart__container">
-					<section class="cart__goods">
-						<h2 class="cart__goods-title">Корзина</h2>
+					<section class="cart-goods">
+						<h2 class="cart__title cart-goods__title">Корзина</h2>
 						<ul class="cart__goods-list">
 							<li class="cart__goods-item item">
 								<img src="img/monitor.jpg" alt="" class="item__img" />
@@ -128,12 +128,56 @@
 							</li>
 						</ul>
 					</section>
+					<section class="cart__total total">
+						<h2 class="visually-hidden">Итоговая цена</h2>
+						<div class="total__wrapper">
+							<ul class="total__table">
+								<li class="total__row total__row_header">
+									<span>Итого</span>
+									<span>41 222 ₽</span>
+								</li>
+								<li class="total__row total__row_grey">
+									<span>Товары, 3 шт.</span>
+									<span>41 222 ₽</span>
+								</li>
+								<li class="total__row total__row_grey">
+									<span>Скидка</span>
+									<span>0 ₽</span>
+								</li>
+								<li class="total__row total__row_grey total__row_gap">
+									<span>Доставка</span>
+									<span>0 ₽</span>
+								</li>
+								<li class="total__row">
+									<span>Дата</span>
+									<span>01 - 03 июля</span>
+								</li>
+								<li class="total__row">
+									<span>Оплата</span>
+									<span>Картой</span>
+								</li>
+							</ul>
+							<div class="total__order">
+								<button class="total__submit" aria-label="оформить заказ">Оформить заказ</button>
+								<label class="total__agree">
+									<input type="checkbox" name="agree" required />
+									<span
+										>Согласен с
+										<a href="#" class="total__agree-link" aria-label="Условия пользования магазином"
+											>условиями</a
+										>
+										правил пользования торговой площадкой и&nbsp;правилами возврата</span
+									>
+								</label>
+							</div>
+						</div>
+					</section>
 					<section class="cart__address address">
-						<h2 class="cart__title">Адрес доставки</h2>
+						<h2 class="cart__title address__title">Адрес доставки</h2>
 						<form class="address__form">
 							<label>
 								<select class="address__item address__item_select" name="city">
-									<option value="" disabled selected>город</option>
+									<option value="" disabled selected>Город</option>
 									<option value="London">Лондон</option>
 									<option value="Birmingham">Бирмингем</option>
 									<option value="Cardiff">Кардифф</option>
@@ -156,48 +200,6 @@
 								<input type="checkbox" name="save-address" />Запомнить этот адрес
 							</label>
 						</form>
-					</section>
-					<section class="cart__total">
-						<h2 class="visually-hidden">Итоговая цена</h2>
-						<ul class="total__table">
-							<li class="total__row total__row_header">
-								<span>Итого</span>
-								<span>41 222 ₽</span>
-							</li>
-							<li class="total__row total__row_grey">
-								<span>Товары, 3 шт.</span>
-								<span>41 222 ₽</span>
-							</li>
-							<li class="total__row total__row_grey">
-								<span>Скидка</span>
-								<span>0 ₽</span>
-							</li>
-							<li class="total__row total__row_grey">
-								<span>Доставка</span>
-								<span>0 ₽</span>
-							</li>
-							<li class="total__row">
-								<span>Дата</span>
-								<span>01 - 03 июля</span>
-							</li>
-							<li class="total__row">
-								<span>Оплата</span>
-								<span>Картой</span>
-							</li>
-						</ul>
-						<div class="total__order">
-							<button class="total__submit" aria-label="оформить заказ">Оформить заказ</button>
-							<label class="total__agree">
-								<input type="checkbox" name="agree" />
-								<span
-									>Согласен с
-									<a href="#" class="total__agree-link" aria-label="Условия пользования магазином"
-										>условиями</a
-									>
-									правил пользования торговой площадкой и&nbsp;правилами возврата</span
-								>
-							</label>
-						</div>
 					</section>
 				</div>
 			</section>

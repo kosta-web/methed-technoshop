@@ -27,24 +27,42 @@
 		border-radius: 2px;
 		width: 36px;
 		height: 36px;
+		transition: border-color, color 0.2s ease-in-out;
+		&:hover {
+			color: $color-main;
+		}
 		&--active {
 			border: 2px solid $color-main;
 		}
 	}
 	&__arrow {
+		display: flex;
 		width: 18px;
 		height: 18px;
-		color: $color-primary;
+		background-image: url('img/arrow.svg');
 		&-start {
 			transform: rotate(180deg);
 		}
-		&--disabled {
-			color: $color-grey-light;
+		&[href=''] {
+			opacity: 0.3;
 			pointer-events: none;
 		}
 	}
 }
-.arrow {
-	width: 18px;
-	height: 18px;
-}
+// 	&__arrow {
+// 		width: 18px;
+// 		height: 18px;
+// 		color: $color-primary;
+// 		&-start {
+// 			transform: rotate(180deg);
+// 		}
+// 		&--disabled {
+// 			color: $color-grey-light;
+// 			pointer-events: none;
+// 		}
+// 	}
+// }
+// .arrow {
+// 	width: 18px;
+// 	height: 18px;
+// }

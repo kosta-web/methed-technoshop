@@ -13,6 +13,9 @@
 		line-height: 20;
 		padding-left: 24px;
 		padding-right: 64px;
+		&:focus {
+			outline: 1px solid $color-main;
+		}
 	}
 	&__button {
 		position: absolute;

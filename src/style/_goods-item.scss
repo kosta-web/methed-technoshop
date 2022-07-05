@@ -8,6 +8,7 @@
 	gap: 10px;
 	&__image {
 		width: 100%;
+		margin-bottom: 10px;
 	}
 	&__title {
 		font-weight: 500;
@@ -33,5 +34,12 @@
 		font-weight: 50;
 		font-size: 16px;
 		line-height: 20px;
+		transition: background-color, color 0.3s ease-in-out;
+		&:hover {
+			background-color: $color-main-sub;
+			border-color: $color-main;
+			color: $color-secondary;
+			font-size: 18px;
+		}
 	}
 }

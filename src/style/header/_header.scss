@@ -26,5 +26,15 @@
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 22px;
+		transition: color 0.3s ease-in-out;
+		&:hover {
+			color: $color-main;
+		}
+	}
+	&__cart {
+		transition: color 0.3s ease-in-out;
+		&:hover {
+			color: $color-main;
+		}
 	}
 }
