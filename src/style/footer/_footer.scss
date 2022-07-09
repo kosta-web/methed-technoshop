@@ -4,10 +4,41 @@
 	color: $color-secondary;
 	&__container {
 		display: grid;
+		gap: 30px;
 		grid-template-columns: 1fr 2fr 1fr 1fr;
+		grid-template-areas:
+			'logo catalog customer contacts'
+			'copyright . . design';
+
+		@include laptop {
+			grid-template-columns: 395px 235px 280px;
+			grid-template-areas:
+				'logo . .'
+				'catalog customer contacts'
+				'copyright . design';
+		}
+		@include tablet {
+			grid-template-columns: 1fr 1fr;
+			grid-template-areas:
+				'logo .'
+				'catalog customer'
+				'catalog contacts'
+				'copyright design';
+		}
+		@include mobile {
+			grid-template-columns: 1fr;
+			grid-template-areas:
+				'logo'
+				'catalog'
+				'customer'
+				'contacts'
+				'copyright'
+				'design';
+		}
 	}
 	&__logo-link {
 		place-self: start;
+		grid-area: logo;
 	}
 	&__logo {
 		width: 146px;
@@ -17,13 +48,26 @@
 		font-size: 32px;
 		line-height: 130%;
 		margin-bottom: 40px;
+
+		@include mobile {
+			font-size: 20px;
+			line-height: 130%;
+		}
 	}
 	&__list {
 		font-weight: 400;
 		font-size: 22px;
 		line-height: 150%;
+
+		@include mobile {
+			font-size: 14px;
+			line-height: 17px;
+		}
 		&_double {
 			column-count: 2;
+			@include laptop {
+				column-count: auto;
+			}
 		}
 		&_contacts {
 			font-weight: 500;
@@ -65,6 +109,24 @@
 		&:hover {
 			color: $color-main;
 		}
+	}
+}
+
+.footer {
+	&__catalog {
+		grid-area: catalog;
+	}
+	&__customer {
+		grid-area: customer;
+	}
+	&__contacts {
+		grid-area: contacts;
+	}
+	&__column_copyright {
+		grid-area: copyright;
+	}
+	&__column_author {
+		grid-area: design;
 	}
 }
 
