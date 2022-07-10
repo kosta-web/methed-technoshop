@@ -13,6 +13,21 @@
 			margin-right: 10px;
 		}
 	}
+	&__label-select {
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			right: 47px;
+			top: 50%;
+			transform: translateY(calc(-50% - 3px)) rotate(45deg);
+			width: 10px;
+			height: 10px;
+			border-width: 2px;
+			border-style: solid;
+			border-color: transparent $color-primary $color-primary transparent;
+		}
+	}
 	&__item {
 		min-width: 340px;
 		width: 100%;
@@ -28,6 +43,10 @@
 			background-color: $color-primary;
 			color: $color-secondary;
 			border: none;
+		}
+		&_select {
+			appearance: none;
+			background-color: $color-secondary;
 		}
 	}
 }

@@ -56,7 +56,25 @@
 		&_select {
 			width: 100%;
 			color: $color-grey;
+			background-color: $color-secondary;
 			padding: 9px 10px;
+			appearance: none;
+		}
+	}
+
+	&__label-select {
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			right: 30px;
+			top: 50%;
+			transform: translateY(calc(-50% - 1px)) rotate(45deg);
+			width: 10px;
+			height: 10px;
+			border-width: 2px;
+			border-style: solid;
+			border-color: transparent $color-primary $color-primary transparent;
 		}
 	}
 
