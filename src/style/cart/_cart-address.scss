@@ -1,14 +1,33 @@
 .address {
+	@include desktop {
+		max-width: 700px;
+	}
+	@include laptop {
+		max-width: 100%;
+	}
 	&__title {
 		margin-bottom: 30px;
+		@include mobile {
+			margin-bottom: 20px;
+		}
 	}
 	&__form {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 30px;
+		@include desktop {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+		}
+		@include tablet {
+			gap: 10px;
+		}
+		@include mobile {
+			grid-template-columns: 1fr;
+		}
 	}
 	&__label-save {
-		grid-column: 3;
+		grid-column: -2;
 		input[type='checkbox'] {
 			margin-right: 10px;
 		}
@@ -38,6 +57,13 @@
 		padding-left: 10px;
 		padding-right: 10px;
 		border: 1px solid $color-primary;
+		@include tablet {
+			font-size: 12px;
+			line-height: 15px;
+		}
+		@include laptop {
+			min-width: 300px;
+		}
 		&_btn {
 			font-weight: 500;
 			background-color: $color-primary;

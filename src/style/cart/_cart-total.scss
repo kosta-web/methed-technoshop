@@ -1,11 +1,47 @@
 .total {
+	@include mobile {
+		padding-top: 15px;
+		padding-bottom: 25px;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			left: calc((100vw - 100%) / -2);
+			top: 0;
+			display: block;
+			width: 100vw;
+			height: 1px;
+			background-color: $color-primary;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			left: calc((100vw - 100%) / -2);
+			bottom: 0;
+			display: block;
+			width: 100vw;
+			height: 1px;
+			background-color: $color-primary;
+		}
+	}
 	&__wrapper {
 		border: 1px solid $color-grey;
 		border-radius: 20px;
 		padding: 40px 20px;
+		@include laptop {
+			max-width: 494px;
+			margin: 0 auto;
+		}
+		@include mobile {
+			border-width: 0;
+			padding: 0;
+		}
 	}
 	&__table {
 		margin-bottom: 50px;
+		@include mobile {
+			margin-bottom: 25px;
+		}
 	}
 	&__row {
 		display: flex;
@@ -16,6 +52,10 @@
 		padding-right: 10px;
 		padding-left: 10px;
 		margin-bottom: 20px;
+		@include mobile {
+			margin-bottom: 10px;
+			padding: 0;
+		}
 
 		&:last-child {
 			margin-bottom: 0;
@@ -27,12 +67,35 @@
 			padding-bottom: 9px;
 			border-bottom: 1px solid $color-grey-light;
 			margin-bottom: 27px;
+			padding-left: 10px;
+			padding-right: 10px;
+			@include mobile {
+				position: relative;
+				padding-bottom: 4px;
+				margin-bottom: 14px;
+				padding-left: 0;
+				padding-right: 0;
+				border-bottom: 0;
+				&::after {
+					content: '';
+					position: absolute;
+					left: calc((100vw - 100%) / -2);
+					bottom: 0;
+					display: block;
+					width: 100vw;
+					height: 1px;
+					background-color: $color-grey-light;
+				}
+			}
 		}
 		&_grey {
 			color: $color-grey;
 		}
 		&_gap {
 			margin-bottom: 40px;
+			@include mobile {
+				margin-bottom: 25px;
+			}
 		}
 	}
 
@@ -40,6 +103,11 @@
 		display: flex;
 		gap: 17px;
 		justify-content: space-between;
+		@include desktop {
+			flex-wrap: wrap;
+			max-width: 352px;
+			margin: 0 auto;
+		}
 	}
 	&__submit {
 		flex-basis: 352px;
@@ -50,6 +118,10 @@
 		font-weight: 700;
 		font-size: 20px;
 		line-height: 24px;
+		@include mobile {
+			font-size: 12px;
+			line-height: 15px;
+		}
 	}
 	&__agree {
 		flex-basis: 292px;
@@ -60,5 +132,8 @@
 		font-size: 14px;
 		line-height: 17px;
 		color: $color-grey;
+	}
+	&__agree-link {
+		color: $color-primary;
 	}
 }
