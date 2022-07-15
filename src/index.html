@@ -17,8 +17,8 @@
 				<a class="header__logo-link" href="/" aria-label="Логотип">
 					<img class="header__logo" src="img/logo.svg" alt="Логотип Techno Shop" />
 				</a>
-				<form class="header__search search">
-					<input type="search" class="search__input" />
+				<form action="/" class="header__search search">
+					<input type="search" class="search__input" name="search" />
 					<button class="search__button" aria-label="найти на товар">
 						<svg
 							width="24"
@@ -48,7 +48,7 @@
 						</svg>
 						<span>8 914 923 92 - 23</span>
 					</a>
-					<a class="header__cart" href="./cart.html" aria-label="перейти в корзину">
+					<a class="header__cart" href="./cart.html" aria-label="перейти в корзину" data-count="0">
 						<svg
 							width="36"
 							height="36"
@@ -67,12 +67,13 @@
 
 		<main class="main">
 			<section class="catalog">
-				<div class="container">
+				<div class="container catalog__container">
 					<h2 class="catalog__title">Каталог</h2>
-					<div class="catalog__container">
+					<div class="catalog__wrapper">
 						<div class="catalog__goods goods">
 							<ul class="goods__list"></ul>
 						</div>
+						<button class="catalog__filter-btn">Фильтры</button>
 						<aside class="catalog__filter filter">
 							<form class="filter__form">
 								<h3 class="filter__title">Фильтры</h3>
@@ -83,29 +84,32 @@
 											<label
 												><input
 													type="number"
-													name="price-start"
+													name="minprice"
+													step="any"
 													placeholder="от"
 													class="filter__input"
-											/></label>
+												/>
+											</label>
 											<label
 												><input
 													type="number"
-													name="price-end"
+													name="maxprice"
+													step="any"
 													placeholder="до"
 													class="filter__input"
-											/></label>
+												/>
+											</label>
 										</div>
 									</fieldset>
 									<fieldset class="filter__field">
 										<legend class="filter__field-title">Категория</legend>
 										<label class="filter__label-select">
-											<select name="category" class="filter__select filter__input_select">
-												<option value="all" selected>Все категории</option>
-												<option value="phone">Смартфоны</option>
-												<option value="tab">Планшеты</option>
-												<option value="watces">Умные часы</option>
-												<option value="monoblock">Моноблоки</option>
-												<option value="notebook">Ноутбуки</option>
+											<select
+												id="category"
+												name="category"
+												class="filter__select filter__input_select"
+											>
+												<option value="" selected>Все категории</option>
 											</select>
 										</label>
 									</fieldset>
@@ -115,14 +119,16 @@
 											<label
 												><input
 													type="number"
-													name="diagonal-start"
+													name="mindisplay"
+													step="any"
 													placeholder="от"
 													class="filter__input"
 											/></label>
 											<label
 												><input
 													type="number"
-													name="diagonal-end"
+													name="maxdisplay"
+													step="any"
 													placeholder="до"
 													class="filter__input"
 											/></label>

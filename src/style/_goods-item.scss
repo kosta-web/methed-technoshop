@@ -50,7 +50,7 @@
 			line-height: 17px;
 		}
 	}
-	&_to-cart {
+	&__to-cart {
 		background-color: transparent;
 		border: 1px solid $color-primary;
 		padding: 8px 20px;
@@ -58,6 +58,10 @@
 		font-size: 16px;
 		line-height: 20px;
 		transition: background-color, color 0.3s ease-in-out;
+		&_remove {
+			color: $color-secondary;
+			background-color: $color-primary;
+		}
 		@include mobile {
 			font-size: 12px;
 			line-height: 15px;

@@ -4,6 +4,15 @@
 	max-width: 340px;
 	@include tablet {
 		display: none;
+		position: absolute;
+		background-color: $color-secondary;
+		top: 0;
+		right: 0;
+		z-index: 555;
+		padding: 14px 20px 26px;
+		&_show {
+			display: block;
+		}
 	}
 	&__form {
 		position: relative;
@@ -16,6 +25,27 @@
 		font-weight: 700;
 		font-size: 26px;
 		line-height: 32px;
+		@include tablet {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+			font-weight: 700;
+			font-size: 22px;
+			line-height: 27px;
+			justify-content: flex-end;
+			&::after {
+				content: '';
+				display: block;
+				width: 18px;
+				height: 18px;
+				background-image: url('img/arrow-down.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				transition: transform 0.3s ease-in-out;
+				transform: rotate(180deg);
+			}
+		}
 	}
 	&__field {
 		margin-bottom: 30px;
@@ -92,6 +122,9 @@
 		padding: 8px 20px;
 		border: none;
 		transition: background-color 0.3s ease-in-out;
+		@include tablet {
+			margin-bottom: 15px;
+		}
 		&:hover {
 			background-color: $color-main;
 		}
@@ -106,5 +139,10 @@
 		border: none;
 		background-color: transparent;
 		color: $color-grey;
+		@include tablet {
+			position: static;
+			display: block;
+			margin: 0 auto;
+		}
 	}
 }

@@ -1,11 +1,14 @@
 .catalog {
+	&__container {
+		position: relative;
+	}
 	&__title {
 		font-weight: 700;
 		font-size: 44px;
 		line-height: 56px;
 		margin-bottom: 10px;
 	}
-	&__container {
+	&__wrapper {
 		display: grid;
 		grid-template-columns: 4fr 340px;
 		gap: 72px 30px;
@@ -29,6 +32,32 @@
 		grid-column: 2 span;
 		@include tablet {
 			grid-column: auto;
+		}
+	}
+	&__filter-btn {
+		display: none;
+		@include tablet {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+			position: absolute;
+			top: 16px;
+			right: 20px;
+			font-weight: 700;
+			font-size: 22px;
+			line-height: 27px;
+			background-color: transparent;
+			border: none;
+			&::after {
+				content: '';
+				display: block;
+				width: 18px;
+				height: 18px;
+				background-image: url('img/arrow-down.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+			}
 		}
 	}
 }

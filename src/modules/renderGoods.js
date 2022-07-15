@@ -3,6 +3,10 @@ import { API_URL } from './var';
 export const renderGoods = (wrapper, goods) => {
 	wrapper.textContent = '';
 
+	if (!goods.length) {
+		wrapper.innerHTML = `<h2>Нет товаров по вашему запросу</h2>`;
+	}
+
 	const cards = goods.map(item => {
 		const li = document.createElement('li');
 		li.className = 'goods__item';
@@ -14,7 +18,7 @@ export const renderGoods = (wrapper, goods) => {
 			</a>
 			<div class="goods-item__buy">
 				<p class="goods-item__price">${item.price} ₽</p>
-				<button class="goods-item_to-cart" aria-label="добавить в корзину" data-id-goods="${item.id}">
+				<button class="goods-item__to-cart" aria-label="добавить в корзину" data-id-goods="${item.id}">
 					В корзину
 				</button>
 			</div>
