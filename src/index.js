@@ -15,6 +15,7 @@ import { renderItem } from './modules/renderItem';
 import { filter } from './modules/filter';
 import { cartControl } from './modules/cartControl';
 import { serviceCounter } from './modules/counterControls';
+import { searchWithoutReload } from './modules/search';
 
 try {
 	const goodsList = document.querySelector('.goods__list');
@@ -22,6 +23,7 @@ try {
 	if (goodsList) {
 		const paginationWrapper = document.querySelector('.pagination');
 
+		searchWithoutReload(goodsList, paginationWrapper);
 		filter(goodsList, paginationWrapper);
 
 		goodsList.innerHTML = `

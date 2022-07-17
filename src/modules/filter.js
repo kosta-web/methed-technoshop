@@ -77,6 +77,8 @@ export const filter = (goodsList, paginationWrapper) => {
 
 		url.search = '';
 
+		url.searchParams.set('search', search);
+
 		for (const key in data) {
 			url.searchParams.set(key, data[key]);
 		}
