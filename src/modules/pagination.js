@@ -71,13 +71,11 @@ export const startPagination = (paginationWrapper, pages, page) => {
 
 	window.addEventListener('resize', () => {
 		if (window.innerWidth <= 560 && !isMobile) {
-			console.log('mobile');
 			pagination(paginationWrapper, pages, page, 4);
 			isMobile = true;
 		}
 
 		if (window.innerWidth > 560 && isMobile) {
-			console.log('not mobile');
 			pagination(paginationWrapper, pages, page, 6);
 			isMobile = false;
 		}
